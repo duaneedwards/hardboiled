@@ -30,11 +30,20 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true" />
         </LinearLayout>
-        <Button
-            android:text="I'm Done"
-            android:id="@+id/btnImDone"
-            android:layout_width="320.6dp"
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" />
+            android:id="@+id/linearLayout2"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:text="I'm Done"
+                android:id="@+id/btnImDone"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent" />
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
