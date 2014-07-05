@@ -35,7 +35,7 @@
                 max_value="180"
                 progress_type="big"
                 hide_label="false"
-                progress_color="#FF00FF"
+                progress_color="#FFCC00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
