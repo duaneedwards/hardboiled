@@ -9,7 +9,21 @@ open Android.Runtime
 open Android.Views
 open Android.Widget
 
-[<Activity (Label = "HardBoiled", MainLauncher = true)>]
+[<Activity (Label = "DoneActivity")>]
+type DoneActivity() =
+  inherit Activity()
+
+  override this.OnCreate(bundle) =
+    base.OnCreate (bundle)
+
+    this.SetContentView (Resource_Layout.Done)
+
+    let button = this.FindViewById<Button>(Resource_Id.btnImDone)
+    button.Click.Add (fun args -> 
+        button.Text <- "You're Done!"
+    )
+
+[<Activity (Label = "Hard Boiled", MainLauncher = true)>]
 type MainActivity () =
     inherit Activity ()
 
@@ -19,13 +33,11 @@ type MainActivity () =
 
         base.OnCreate (bundle)
 
-        // Set our view from the "main" layout resource
         this.SetContentView (Resource_Layout.Main)
 
-        // Get our button from the layout resource, and attach an event to it
         let button = this.FindViewById<Button>(Resource_Id.myButton)
         button.Click.Add (fun args -> 
-            button.Text <- sprintf "%d clicks!" count
-            count <- count + 1
+            this.StartActivity(typeof<DoneActivity>)
+            //this.SetContentView(Resource_Layout.Done)
         )
 

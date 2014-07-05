@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException33e926896145498083fb3100ab2f5d48 of obj
-    exception ReturnNoneException33e926896145498083fb3100ab2f5d48
+    exception ReturnException22deb7b3e3af4bfa95091493c03abc8d of obj
+    exception ReturnNoneException22deb7b3e3af4bfa95091493c03abc8d
     [<AutoOpen>]
-    module FuncConvertFinalOverload33e926896145498083fb3100ab2f5d48 =
+    module FuncConvertFinalOverload22deb7b3e3af4bfa95091493c03abc8d =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -68,8 +68,23 @@ namespace HardBoiled
         
         (* partial *)Resource_Id () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
+            // aapt resource value: 0x7f060004
+            static member btnImDone = 2131099652
+            
+            // aapt resource value: 0x7f060001
+            static member linearLayout1 = 2131099649
+            
+            // aapt resource value: 0x7f060005
+            static member myButton = 2131099653
+            
             // aapt resource value: 0x7f060000
-            static member myButton = 2131099648
+            static member relativeLayout1 = 2131099648
+            
+            // aapt resource value: 0x7f060002
+            static member textView1 = 2131099650
+            
+            // aapt resource value: 0x7f060003
+            static member textView2 = 2131099651
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
 
@@ -79,7 +94,10 @@ namespace HardBoiled
         (* partial *)Resource_Layout () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
             // aapt resource value: 0x7f030000
-            static member Main = 2130903040
+            static member Done = 2130903040
+            
+            // aapt resource value: 0x7f030001
+            static member Main = 2130903041
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
 
@@ -92,7 +110,7 @@ namespace HardBoiled
             static member app_name = 2130968577
             
             // aapt resource value: 0x7f040000
-            static member hello = 2130968576
+            static member nextstep = 2130968576
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
 
