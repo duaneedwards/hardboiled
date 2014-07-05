@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException22deb7b3e3af4bfa95091493c03abc8d of obj
-    exception ReturnNoneException22deb7b3e3af4bfa95091493c03abc8d
+    exception ReturnException9dca249c327c46579332d755ad4ae6b6 of obj
+    exception ReturnNoneException9dca249c327c46579332d755ad4ae6b6
     [<AutoOpen>]
-    module FuncConvertFinalOverload22deb7b3e3af4bfa95091493c03abc8d =
+    module FuncConvertFinalOverload9dca249c327c46579332d755ad4ae6b6 =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -68,14 +68,17 @@ namespace HardBoiled
         
         (* partial *)Resource_Id () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
-            // aapt resource value: 0x7f060004
-            static member btnImDone = 2131099652
+            // aapt resource value: 0x7f060006
+            static member btnImDone = 2131099654
+            
+            // aapt resource value: 0x7f060005
+            static member btnNext = 2131099653
             
             // aapt resource value: 0x7f060001
             static member linearLayout1 = 2131099649
             
-            // aapt resource value: 0x7f060005
-            static member myButton = 2131099653
+            // aapt resource value: 0x7f060004
+            static member linearLayout2 = 2131099652
             
             // aapt resource value: 0x7f060000
             static member relativeLayout1 = 2131099648
@@ -94,10 +97,19 @@ namespace HardBoiled
         (* partial *)Resource_Layout () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
             // aapt resource value: 0x7f030000
-            static member Done = 2130903040
+            static member Boil = 2130903040
             
             // aapt resource value: 0x7f030001
-            static member Main = 2130903041
+            static member Done = 2130903041
+            
+            // aapt resource value: 0x7f030002
+            static member Prepare = 2130903042
+            
+            // aapt resource value: 0x7f030003
+            static member Rest = 2130903043
+            
+            // aapt resource value: 0x7f030004
+            static member TurnOn = 2130903044
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
 

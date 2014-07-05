@@ -23,21 +23,60 @@ type DoneActivity() =
         button.Text <- "You're Done!"
     )
 
+[<Activity (Label = "RestActivity")>]
+type RestActivity() =
+  inherit Activity()
+
+  override this.OnCreate(bundle) =
+    base.OnCreate (bundle)
+
+    this.SetContentView (Resource_Layout.Rest)
+
+    let button = this.FindViewById<Button>(Resource_Id.btnNext)
+    button.Click.Add (fun args -> 
+        this.StartActivity(typeof<DoneActivity>)
+    )
+
+[<Activity (Label = "BoilActivity")>]
+type BoilActivity() =
+  inherit Activity()
+
+  override this.OnCreate(bundle) =
+    base.OnCreate (bundle)
+
+    this.SetContentView (Resource_Layout.Boil)
+
+    let button = this.FindViewById<Button>(Resource_Id.btnNext)
+    button.Click.Add (fun args -> 
+        this.StartActivity(typeof<RestActivity>)
+    )
+
+[<Activity (Label = "TurnOnActivity")>]
+type TurnOnActivity() =
+  inherit Activity()
+
+  override this.OnCreate(bundle) =
+    base.OnCreate (bundle)
+
+    this.SetContentView (Resource_Layout.TurnOn)
+
+    let button = this.FindViewById<Button>(Resource_Id.btnNext)
+    button.Click.Add (fun args -> 
+        this.StartActivity(typeof<BoilActivity>)
+    )
+
 [<Activity (Label = "Hard Boiled", MainLauncher = true)>]
 type MainActivity () =
     inherit Activity ()
-
-    let mutable count:int = 1
 
     override this.OnCreate (bundle) =
 
         base.OnCreate (bundle)
 
-        this.SetContentView (Resource_Layout.Main)
+        this.SetContentView (Resource_Layout.Prepare)
 
-        let button = this.FindViewById<Button>(Resource_Id.myButton)
+        let button = this.FindViewById<Button>(Resource_Id.btnNext)
         button.Click.Add (fun args -> 
-            this.StartActivity(typeof<DoneActivity>)
-            //this.SetContentView(Resource_Layout.Done)
+            this.StartActivity(typeof<TurnOnActivity>)
         )
 

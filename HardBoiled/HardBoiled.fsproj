@@ -60,10 +60,13 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\Done.axml" />
+    <AndroidResource Include="Resources\layout\Rest.axml" />
+    <AndroidResource Include="Resources\layout\Boil.axml" />
+    <AndroidResource Include="Resources\layout\TurnOn.axml" />
+    <AndroidResource Include="Resources\layout\Prepare.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />
