@@ -1,0 +1,2 @@
+C:\checkouts\HardBoiled\HardBoiled\bin\Debug\HardBoiled.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\FSharp.Core.dll

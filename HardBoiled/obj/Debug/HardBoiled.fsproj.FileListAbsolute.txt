@@ -1,0 +1,13 @@
+C:\checkouts\HardBoiled\HardBoiled\bin\Debug\HardBoiled.dll
+C:\checkouts\HardBoiled\HardBoiled\bin\Debug\HardBoiled.pdb
+C:\checkouts\HardBoiled\HardBoiled\bin\Debug\HardBoiled.dll.mdb
+C:\checkouts\HardBoiled\HardBoiled\bin\Debug\HardBoiled.HardBoiled.apk
+C:\checkouts\HardBoiled\HardBoiled\bin\Debug\HardBoiled.HardBoiled-Signed.apk
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\HardBoiled.dll
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\HardBoiled.pdb
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\android\bin\HardBoiled.HardBoiled.apk
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\res\layout\main.xml
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\res\values\strings.xml
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\res\drawable\icon.png
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\R.cs.flag
+C:\checkouts\HardBoiled\HardBoiled\obj\Debug\uploadflags.txt
