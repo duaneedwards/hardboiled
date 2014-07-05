@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException9dca249c327c46579332d755ad4ae6b6 of obj
-    exception ReturnNoneException9dca249c327c46579332d755ad4ae6b6
+    exception ReturnException1a552fe735b9454cb50962111ae19f07 of obj
+    exception ReturnNoneException1a552fe735b9454cb50962111ae19f07
     [<AutoOpen>]
-    module FuncConvertFinalOverload9dca249c327c46579332d755ad4ae6b6 =
+    module FuncConvertFinalOverload1a552fe735b9454cb50962111ae19f07 =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -68,17 +68,20 @@ namespace HardBoiled
         
         (* partial *)Resource_Id () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
-            // aapt resource value: 0x7f060006
-            static member btnImDone = 2131099654
+            // aapt resource value: 0x7f060007
+            static member btnImDone = 2131099655
             
-            // aapt resource value: 0x7f060005
-            static member btnNext = 2131099653
+            // aapt resource value: 0x7f060006
+            static member btnNext = 2131099654
             
             // aapt resource value: 0x7f060001
             static member linearLayout1 = 2131099649
             
+            // aapt resource value: 0x7f060005
+            static member linearLayout2 = 2131099653
+            
             // aapt resource value: 0x7f060004
-            static member linearLayout2 = 2131099652
+            static member progressView = 2131099652
             
             // aapt resource value: 0x7f060000
             static member relativeLayout1 = 2131099648

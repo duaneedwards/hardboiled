@@ -9,7 +9,7 @@ open Android.Runtime
 open Android.Views
 open Android.Widget
 
-[<Activity (Label = "DoneActivity")>]
+[<Activity (Label = "Done!")>]
 type DoneActivity() =
   inherit Activity()
 
@@ -23,7 +23,7 @@ type DoneActivity() =
         button.Text <- "You're Done!"
     )
 
-[<Activity (Label = "RestActivity")>]
+[<Activity (Label = "Resting the eggs")>]
 type RestActivity() =
   inherit Activity()
 
@@ -37,7 +37,7 @@ type RestActivity() =
         this.StartActivity(typeof<DoneActivity>)
     )
 
-[<Activity (Label = "BoilActivity")>]
+[<Activity (Label = "Boiling the eggs")>]
 type BoilActivity() =
   inherit Activity()
 
@@ -46,12 +46,15 @@ type BoilActivity() =
 
     this.SetContentView (Resource_Layout.Boil)
 
+    let progress = this.FindViewById<RadialProgress.RadialProgressView>(Resource_Id.progressView)
+    progress.Value <- 90.0f
+
     let button = this.FindViewById<Button>(Resource_Id.btnNext)
     button.Click.Add (fun args -> 
         this.StartActivity(typeof<RestActivity>)
     )
 
-[<Activity (Label = "TurnOnActivity")>]
+[<Activity (Label = "Turn On Your Stove")>]
 type TurnOnActivity() =
   inherit Activity()
 
