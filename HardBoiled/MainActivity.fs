@@ -32,6 +32,21 @@ type RestActivity() =
 
     this.SetContentView (Resource_Layout.Rest)
 
+    let progress = this.FindViewById<RadialProgress.RadialProgressView>(Resource_Id.progressView)
+    let twelveminutes = 720.0f
+    progress.MaxValue <- twelveminutes
+    let restTimer = new System.Timers.Timer(1000.0)
+    restTimer.Elapsed.Add(fun _ -> 
+        progress.Value <- progress.Value + 1.0f
+        if progress.Value = twelveminutes
+        then
+        (
+            restTimer.Stop()
+            this.StartActivity(typeof<DoneActivity>)
+        )
+    )
+    restTimer.Start()
+
     let button = this.FindViewById<Button>(Resource_Id.btnNext)
     button.Click.Add (fun args -> 
         this.StartActivity(typeof<DoneActivity>)
@@ -47,18 +62,20 @@ type BoilActivity() =
     this.SetContentView (Resource_Layout.Boil)
 
     let progress = this.FindViewById<RadialProgress.RadialProgressView>(Resource_Id.progressView)
+    let threeminutes = 180.0f
+    progress.MaxValue <- threeminutes
 
-    let timer = new System.Timers.Timer(1000.0)
-    timer.Elapsed.Add(fun _ -> 
+    let boilTimer = new System.Timers.Timer(1000.0)
+    boilTimer.Elapsed.Add(fun _ -> 
         progress.Value <- progress.Value + 1.0f
-        if progress.Value = 180.0f
+        if progress.Value = threeminutes
         then
         (
-            timer.Stop()
+            boilTimer.Stop()
             this.StartActivity(typeof<RestActivity>)
         )
     )
-    timer.Start()
+    boilTimer.Start()
 
     let button = this.FindViewById<Button>(Resource_Id.btnNext)
     button.Click.Add (fun args -> 

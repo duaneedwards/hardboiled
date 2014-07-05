@@ -28,6 +28,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true" />
+            <radialprogress.RadialProgressView
+                android:id="@+id/progressView"
+                min_value="0"
+                max_value="180"
+                progress_type="big"
+                hide_label="false"
+                progress_color="#FF00FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
