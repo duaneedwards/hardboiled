@@ -47,7 +47,18 @@ type BoilActivity() =
     this.SetContentView (Resource_Layout.Boil)
 
     let progress = this.FindViewById<RadialProgress.RadialProgressView>(Resource_Id.progressView)
-    progress.Value <- 90.0f
+
+    let timer = new System.Timers.Timer(1000.0)
+    timer.Elapsed.Add(fun _ -> 
+        progress.Value <- progress.Value + 1.0f
+        if progress.Value = 180.0f
+        then
+        (
+            timer.Stop()
+            this.StartActivity(typeof<RestActivity>)
+        )
+    )
+    timer.Start()
 
     let button = this.FindViewById<Button>(Resource_Id.btnNext)
     button.Click.Add (fun args -> 
