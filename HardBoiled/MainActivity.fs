@@ -33,17 +33,18 @@ type RestActivity() =
     this.SetContentView (Resource_Layout.Rest)
 
     let progress = this.FindViewById<RadialProgress.RadialProgressView>(Resource_Id.progressView)
+    progress.LabelHidden <- true;
     let twelveminutes = 720.0f
     progress.MaxValue <- twelveminutes
     let restTimer = new System.Timers.Timer(1000.0)
     restTimer.Elapsed.Add(fun _ -> 
         progress.Value <- progress.Value + 1.0f
         if progress.Value = twelveminutes
-        then
-        (
-            restTimer.Stop()
-            this.StartActivity(typeof<DoneActivity>)
-        )
+        then 
+            ( 
+                restTimer.Stop() 
+                this.StartActivity(typeof<DoneActivity>) 
+            )
     )
     restTimer.Start()
 
@@ -62,18 +63,22 @@ type BoilActivity() =
     this.SetContentView (Resource_Layout.Boil)
 
     let progress = this.FindViewById<RadialProgress.RadialProgressView>(Resource_Id.progressView)
+    progress.LabelHidden <- true;
+    let boilProgressText = this.FindViewById<TextView>(Resource_Id.boilProgressText)
     let threeminutes = 180.0f
     progress.MaxValue <- threeminutes
 
     let boilTimer = new System.Timers.Timer(1000.0)
     boilTimer.Elapsed.Add(fun _ -> 
         progress.Value <- progress.Value + 1.0f
+        let timeSpan = TimeSpan.FromSeconds((float threeminutes) - (float progress.Value))
+        this.RunOnUiThread(fun _ -> boilProgressText.Text <- String.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds))
         if progress.Value = threeminutes
         then
-        (
-            boilTimer.Stop()
-            this.StartActivity(typeof<RestActivity>)
-        )
+            (
+                boilTimer.Stop()
+                this.StartActivity(typeof<RestActivity>)
+            )
     )
     boilTimer.Start()
 

@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnExceptionc5075be971784a0baee1e194fb7c3fb5 of obj
-    exception ReturnNoneExceptionc5075be971784a0baee1e194fb7c3fb5
+    exception ReturnException0dd38e1841f641f3ab29cbf0acf3524b of obj
+    exception ReturnNoneException0dd38e1841f641f3ab29cbf0acf3524b
     [<AutoOpen>]
-    module FuncConvertFinalOverloadc5075be971784a0baee1e194fb7c3fb5 =
+    module FuncConvertFinalOverload0dd38e1841f641f3ab29cbf0acf3524b =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -69,7 +69,10 @@ namespace HardBoiled
         (* partial *)Resource_Id () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
             // aapt resource value: 0x7f060007
-            static member btnImDone = 2131099655
+            static member boilProgressText = 2131099655
+            
+            // aapt resource value: 0x7f060008
+            static member btnImDone = 2131099656
             
             // aapt resource value: 0x7f060006
             static member btnNext = 2131099654
