@@ -34,11 +34,15 @@ type RestActivity() =
 
     let progress = this.FindViewById<RadialProgress.RadialProgressView>(Resource_Id.progressView)
     progress.LabelHidden <- true;
+    let restProgressText = this.FindViewById<TextView>(Resource_Id.restProgressText)
     let twelveminutes = 720.0f
     progress.MaxValue <- twelveminutes
+
     let restTimer = new System.Timers.Timer(1000.0)
     restTimer.Elapsed.Add(fun _ -> 
         progress.Value <- progress.Value + 1.0f
+        let timeSpan = TimeSpan.FromSeconds((float twelveminutes) - (float progress.Value))
+        this.RunOnUiThread(fun _ -> restProgressText.Text <- String.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds))
         if progress.Value = twelveminutes
         then 
             ( 

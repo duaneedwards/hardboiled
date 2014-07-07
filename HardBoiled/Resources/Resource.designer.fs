@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException0dd38e1841f641f3ab29cbf0acf3524b of obj
-    exception ReturnNoneException0dd38e1841f641f3ab29cbf0acf3524b
+    exception ReturnExceptionf9255b68845d41b383e629f8b50f34f6 of obj
+    exception ReturnNoneExceptionf9255b68845d41b383e629f8b50f34f6
     [<AutoOpen>]
-    module FuncConvertFinalOverload0dd38e1841f641f3ab29cbf0acf3524b =
+    module FuncConvertFinalOverloadf9255b68845d41b383e629f8b50f34f6 =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -88,6 +88,9 @@ namespace HardBoiled
             
             // aapt resource value: 0x7f060000
             static member relativeLayout1 = 2131099648
+            
+            // aapt resource value: 0x7f060009
+            static member restProgressText = 2131099657
             
             // aapt resource value: 0x7f060002
             static member textView1 = 2131099650
