@@ -37,7 +37,7 @@
                 android:id="@+id/boilProgressText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="70dp"
+                android:textSize="60dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true" />
             <radialprogress.RadialProgressView

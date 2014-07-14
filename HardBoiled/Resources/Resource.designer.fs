@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnExceptiond8b7ce90f81b496ca051d27ad73a4d4b of obj
-    exception ReturnNoneExceptiond8b7ce90f81b496ca051d27ad73a4d4b
+    exception ReturnException5f657e536b94460f804b30ed173955d1 of obj
+    exception ReturnNoneException5f657e536b94460f804b30ed173955d1
     [<AutoOpen>]
-    module FuncConvertFinalOverloadd8b7ce90f81b496ca051d27ad73a4d4b =
+    module FuncConvertFinalOverload5f657e536b94460f804b30ed173955d1 =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
