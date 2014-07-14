@@ -3,38 +3,42 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Rest pot off of the stove for 12 minutes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <FrameLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout1">
-        <TextView
-            android:text="12:00"
-            android:id="@+id/restProgressText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="70dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true" />
-        <LinearLayout
-            android:orientation="vertical"
+        android:id="@+id/frameLayout1"
+        android:layout_weight="1">
+        <RelativeLayout
             android:minWidth="25px"
             android:minHeight="25px"
-            android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout1">
             <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="Rest pot off of the stove for 12 minutes"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/textView2"
+                android:text="12:00"
+                android:id="@+id/restProgressText"
+                android:textSize="70dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true" />
             <radialprogress.RadialProgressView
                 android:id="@+id/progressView"
@@ -43,23 +47,25 @@
                 progress_type="big"
                 hide_label="false"
                 progress_color="#0000FF"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Waiting ..."
+            android:id="@+id/btnNext"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout2"
-            android:layout_alignParentBottom="true">
-            <Button
-                android:text="Waiting ..."
-                android:id="@+id/btnNext"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_width="match_parent" />
-        </LinearLayout>
-    </RelativeLayout>
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
 </LinearLayout>

@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException06ba58cc2d424a938d4158848f78e9c4 of obj
-    exception ReturnNoneException06ba58cc2d424a938d4158848f78e9c4
+    exception ReturnExceptiond8b7ce90f81b496ca051d27ad73a4d4b of obj
+    exception ReturnNoneExceptiond8b7ce90f81b496ca051d27ad73a4d4b
     [<AutoOpen>]
-    module FuncConvertFinalOverload06ba58cc2d424a938d4158848f78e9c4 =
+    module FuncConvertFinalOverloadd8b7ce90f81b496ca051d27ad73a4d4b =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -68,8 +68,8 @@ namespace HardBoiled
         
         (* partial *)Resource_Id () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
-            // aapt resource value: 0x7f060001
-            static member boilProgressText = 2131099649
+            // aapt resource value: 0x7f060004
+            static member boilProgressText = 2131099652
             
             // aapt resource value: 0x7f060008
             static member btnImDone = 2131099656
@@ -78,7 +78,10 @@ namespace HardBoiled
             static member btnNext = 2131099655
             
             // aapt resource value: 0x7f060002
-            static member linearLayout1 = 2131099650
+            static member frameLayout1 = 2131099650
+            
+            // aapt resource value: 0x7f060000
+            static member linearLayout1 = 2131099648
             
             // aapt resource value: 0x7f060006
             static member linearLayout2 = 2131099654
@@ -86,17 +89,17 @@ namespace HardBoiled
             // aapt resource value: 0x7f060005
             static member progressView = 2131099653
             
-            // aapt resource value: 0x7f060000
-            static member relativeLayout1 = 2131099648
+            // aapt resource value: 0x7f060003
+            static member relativeLayout1 = 2131099651
+            
+            // aapt resource value: 0x7f06000a
+            static member restProgressText = 2131099658
             
             // aapt resource value: 0x7f060009
-            static member restProgressText = 2131099657
+            static member textView1 = 2131099657
             
-            // aapt resource value: 0x7f060003
-            static member textView1 = 2131099651
-            
-            // aapt resource value: 0x7f060004
-            static member textView2 = 2131099652
+            // aapt resource value: 0x7f060001
+            static member textView2 = 2131099649
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
 
