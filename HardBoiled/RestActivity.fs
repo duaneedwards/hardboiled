@@ -35,7 +35,18 @@ type RestActivity() =
         if progress.Value = twelveminutes
         then 
             ( 
-                restTimer.Stop() 
+                restTimer.Stop()
+
+                let notificationId = 1100;
+                let notificationTitle = "Your eggs are now ready!"
+                let notificationContent = "Peel them under cold running water, and enjoy!"
+
+                let builder = new Android.App.Notification.Builder(this)
+                let b = builder.SetContentTitle(notificationTitle).SetSmallIcon(Resource_Drawable.Icon).SetContentText(String.Format(notificationContent))
+
+                let notificationManager = this.GetSystemService(Context.NotificationService) :?> NotificationManager
+                notificationManager.Notify(notificationId, builder.Build())
+
                 this.StartActivity(typeof<DoneActivity>) 
             )
     )

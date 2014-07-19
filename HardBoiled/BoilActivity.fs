@@ -36,6 +36,17 @@ type BoilActivity() =
         then
             (
                 boilTimer.Stop()
+
+                let notificationId = 1000;
+                let notificationTitle = "Your eggs are now boiled!"
+                let notificationContent = "Take them off of the stove quickly!"
+
+                let builder = new Android.App.Notification.Builder(this)
+                let b = builder.SetContentTitle(notificationTitle).SetSmallIcon(Resource_Drawable.Icon).SetContentText(String.Format(notificationContent))
+
+                let notificationManager = this.GetSystemService(Context.NotificationService) :?> NotificationManager
+                notificationManager.Notify(notificationId, builder.Build())
+
                 this.StartActivity(typeof<RestActivity>)
             )
     )
