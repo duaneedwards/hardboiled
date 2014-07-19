@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException5f657e536b94460f804b30ed173955d1 of obj
-    exception ReturnNoneException5f657e536b94460f804b30ed173955d1
+    exception ReturnException70a2632b5cfb4538bece860a17dedabc of obj
+    exception ReturnNoneException70a2632b5cfb4538bece860a17dedabc
     [<AutoOpen>]
-    module FuncConvertFinalOverload5f657e536b94460f804b30ed173955d1 =
+    module FuncConvertFinalOverload70a2632b5cfb4538bece860a17dedabc =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -60,6 +60,18 @@ namespace HardBoiled
             
             // aapt resource value: 0x7f020001
             static member monoandroidsplash = 2130837505
+            
+            // aapt resource value: 0x7f020002
+            static member Peel_eggs = 2130837506
+            
+            // aapt resource value: 0x7f020003
+            static member Pot_on_stove = 2130837507
+            
+            // aapt resource value: 0x7f020004
+            static member Prepare = 2130837508
+            
+            // aapt resource value: 0x7f020005
+            static member Rest = 2130837509
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
 
@@ -92,11 +104,8 @@ namespace HardBoiled
             // aapt resource value: 0x7f060003
             static member relativeLayout1 = 2131099651
             
-            // aapt resource value: 0x7f06000a
-            static member restProgressText = 2131099658
-            
             // aapt resource value: 0x7f060009
-            static member textView1 = 2131099657
+            static member restProgressText = 2131099657
             
             // aapt resource value: 0x7f060001
             static member textView2 = 2131099649

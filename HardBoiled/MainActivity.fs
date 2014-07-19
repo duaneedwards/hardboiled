@@ -9,7 +9,7 @@ open Android.Runtime
 open Android.Views
 open Android.Widget
 
-[<Activity (Label = "Hard Boiled", MainLauncher = true)>]
+[<Activity (Label = "Preparation", MainLauncher = true)>]
 type MainActivity () =
     inherit Activity ()
 

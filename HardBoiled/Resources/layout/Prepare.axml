@@ -8,7 +8,8 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout1">
+        android:id="@+id/relativeLayout1"
+        android:background="@drawable/Prepare">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -17,18 +18,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Preparation"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:text="Add eggs to pot, then fill with water until 5cm / 2 inches above the top egg"
+                android:text="Add eggs to pot, then fill with water until 5cm / 2 inches above the top egg:"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true" />
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"

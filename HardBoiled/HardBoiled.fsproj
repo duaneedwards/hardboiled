@@ -67,6 +67,10 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
+	<AndroidResource Include="Resources\drawable\Prepare.png" />
+	<AndroidResource Include="Resources\drawable\Pot_on_stove.png" />
+	<AndroidResource Include="Resources\drawable\Rest.png" />
+	<AndroidResource Include="Resources\drawable\Peel_eggs.png" />
     <AndroidResource Include="Resources\layout\Done.axml" />
     <AndroidResource Include="Resources\layout\Rest.axml" />
     <AndroidResource Include="Resources\layout\Boil.axml" />

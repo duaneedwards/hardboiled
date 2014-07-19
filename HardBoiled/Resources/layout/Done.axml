@@ -8,7 +8,8 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout1">
+        android:id="@+id/relativeLayout1"
+        android:background="@drawable/Peel_eggs">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -17,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Under cool running water, peel your eggs"
+                android:text="Peels your eggs under cool running water"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
