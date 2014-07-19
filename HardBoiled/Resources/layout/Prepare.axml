@@ -16,7 +16,10 @@
             android:minHeight="25px"
             android:id="@+id/linearLayout1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
             <TextView
                 android:text="Add eggs to pot, then fill with water until 5cm / 2 inches above the top egg:"
                 android:textAppearance="?android:attr/textAppearanceMedium"

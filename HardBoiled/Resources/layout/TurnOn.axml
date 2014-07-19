@@ -18,13 +18,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Wait until the water has starting to boil"
+                android:text="Wait until the water has started to boil"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"

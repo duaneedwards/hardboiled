@@ -23,5 +23,5 @@ type DoneActivity() =
 
     let button = this.FindViewById<Button>(Resource_Id.btnImDone)
     button.Click.Add (fun args -> 
-        button.Text <- "You're Done!"
+        button.Text <- "Enjoy :-)"
     )
