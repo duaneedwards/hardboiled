@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@drawable/Pot_on_stove">
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_marginTop="10dp" />
     </LinearLayout>
     <FrameLayout
@@ -34,14 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/relativeLayout1">
-            <TextView
-                android:text="12:00"
-                android:id="@+id/restProgressText"
-                android:textSize="60dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true" />
             <radialprogress.RadialProgressView
                 android:id="@+id/progressView"
                 min_value="0"
@@ -52,7 +45,17 @@
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/Circle" />
+            <TextView
+                android:text="12:00"
+                android:id="@+id/restProgressText"
+                android:textSize="60dp"
+                android:alpha="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
         </RelativeLayout>
     </FrameLayout>
     <LinearLayout

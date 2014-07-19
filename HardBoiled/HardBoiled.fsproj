@@ -25,7 +25,8 @@
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <Tailcalls>false</Tailcalls>
-    <PlatformTarget></PlatformTarget>
+    <PlatformTarget>
+    </PlatformTarget>
     <ConsolePause>false</ConsolePause>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
@@ -37,7 +38,8 @@
     <ErrorReport>prompt</ErrorReport>
     <Tailcalls>true</Tailcalls>
     <ConsolePause>false</ConsolePause>
-    <PlatformTarget></PlatformTarget>
+    <PlatformTarget>
+    </PlatformTarget>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
@@ -67,15 +69,16 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
-	<AndroidResource Include="Resources\drawable\Prepare.png" />
-	<AndroidResource Include="Resources\drawable\Pot_on_stove.png" />
-	<AndroidResource Include="Resources\drawable\Rest.png" />
-	<AndroidResource Include="Resources\drawable\Peel_eggs.png" />
+    <AndroidResource Include="Resources\drawable\Prepare.png" />
+    <AndroidResource Include="Resources\drawable\Pot_on_stove.png" />
+    <AndroidResource Include="Resources\drawable\Rest.png" />
+    <AndroidResource Include="Resources\drawable\Peel_eggs.png" />
     <AndroidResource Include="Resources\layout\Done.axml" />
     <AndroidResource Include="Resources\layout\Rest.axml" />
     <AndroidResource Include="Resources\layout\Boil.axml" />
     <AndroidResource Include="Resources\layout\TurnOn.axml" />
     <AndroidResource Include="Resources\layout\Prepare.axml" />
+    <AndroidResource Include="Resources\drawable\Circle.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />

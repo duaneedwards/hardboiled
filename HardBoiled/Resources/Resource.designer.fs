@@ -23,10 +23,10 @@ namespace HardBoiled
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnException24041eb04ebb40418a8b4b8b1588840b of obj
-    exception ReturnNoneException24041eb04ebb40418a8b4b8b1588840b
+    exception ReturnExceptione1c5ad43969544a19c5d6bbec34c15fc of obj
+    exception ReturnNoneExceptione1c5ad43969544a19c5d6bbec34c15fc
     [<AutoOpen>]
-    module FuncConvertFinalOverload24041eb04ebb40418a8b4b8b1588840b =
+    module FuncConvertFinalOverloade1c5ad43969544a19c5d6bbec34c15fc =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form
@@ -56,22 +56,25 @@ namespace HardBoiled
         (* partial *)Resource_Drawable () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
             // aapt resource value: 0x7f020000
-            static member Icon = 2130837504
+            static member Circle = 2130837504
             
             // aapt resource value: 0x7f020001
-            static member monoandroidsplash = 2130837505
+            static member Icon = 2130837505
             
             // aapt resource value: 0x7f020002
-            static member Peel_eggs = 2130837506
+            static member monoandroidsplash = 2130837506
             
             // aapt resource value: 0x7f020003
-            static member Pot_on_stove = 2130837507
+            static member Peel_eggs = 2130837507
             
             // aapt resource value: 0x7f020004
-            static member Prepare = 2130837508
+            static member Pot_on_stove = 2130837508
             
             // aapt resource value: 0x7f020005
-            static member Rest = 2130837509
+            static member Prepare = 2130837509
+            
+            // aapt resource value: 0x7f020006
+            static member Rest = 2130837510
             (* Member of type 'CodeTypeConstructor' is not supported by the CodeDOM provider and was omitted *)
 
 
@@ -80,8 +83,8 @@ namespace HardBoiled
         
         (* partial *)Resource_Id () =
             static do Android.Runtime.ResourceIdManager.UpdateIdValues()
-            // aapt resource value: 0x7f060004
-            static member boilProgressText = 2131099652
+            // aapt resource value: 0x7f060005
+            static member boilProgressText = 2131099653
             
             // aapt resource value: 0x7f060008
             static member btnImDone = 2131099656
@@ -98,8 +101,8 @@ namespace HardBoiled
             // aapt resource value: 0x7f060006
             static member linearLayout2 = 2131099654
             
-            // aapt resource value: 0x7f060005
-            static member progressView = 2131099653
+            // aapt resource value: 0x7f060004
+            static member progressView = 2131099652
             
             // aapt resource value: 0x7f060003
             static member relativeLayout1 = 2131099651
